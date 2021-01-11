@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetbox</title>
+    <link rel="icon" type="images/ico"  href="images/logotipo.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="main">
+        <section id="header">
+            <div class="logo">
+                <img src="images/logotipo.png" alt="logo">
+            </div>
+            <div class="search">
+                <input id="search" type="text" placeholder="search">
+                <button id="btn-search">Search</button>
+                <a href="advanced_search.html">search advanced</a>
+            </div>
+
+            
+        </section>
+
+
+        <section id="advanced-search">
+         
+            
+            <div class="content-detail">
+                <div class="advanced-search-title">
+                    Advanced search
+                </div>  
+                <div class="advanced">
+                    
+                    <div class="advanced-search-options" >
+                        <form method="POST" action="search.html">
+                            <label for="description">Description</label>
+                            <input id="description" name="description" type="text" placeholder="description">
+                            
+                            
+                            <label for="categories-input">Categories</label>
+                            <select name="categories-input" id="categories-input">
+                                <option value="chocolate">Chocolate</option>
+                                <option value="cakes">Cakes</option>
+                                <option value="vanilla">Vanilla</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="wedding">Wedding</option>
+                            </select>
+                            
+                            
+                            <label for="description">Price</label>
+                            <div>
+                                <input id="min-price" name="min-price" type="number" placeholder="min price">
+                                <input id="max-price" name="max-price" type="number" placeholder="max price">
+                            </div>
+
+                            
+                            <label for="categories-input">Location</label>
+                            <select name="categories-input" id="categories-input">
+                                <option value="1">Lisboa</option>
+                                <option value="2">Leiria</option>
+                                <option value="3">Santarém</option>
+                                <option value="4">Setúbal</option>
+                                <option value="5">Beja</option>
+                                <option value="6">Faro</option>
+                                <option value="7">Évora</option>
+                                <option value="8">Portalegre</option>
+                                <option value="9">Castelo Branco</option>
+                                <option value="10">Guarda</option>
+                                <option value="11">Coimbra</option>
+                                <option value="12">Aveiro</option>
+                                <option value="13">Viseu</option>
+                                <option value="14">Braganza</option>
+                                <option value="15">Vila Real</option>
+                                <option value="16">Oporto</option>
+                                <option value="17">Braga</option>
+                                <option value="18">Viana do Castelo</option>
+                            </select>
+
+                            
+                            <label for="create-data">Date created</label>
+                            <input id="create-data" name="create-data" type="date" placeholder="Date of elaboration">
+                            
+                            
+                            <label for="description">Date of Expiry</label>
+                            <input id="description" name="description" type="date" placeholder="Date of Expiry">
+                            
+                            <div class="button-search">
+                                <button type="submit">Search</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="categories">
+            <h2>Categories</h2>
+            <br>
+            <ol>
+            <li class="active-category"><a href="#">chocolate</a></li>
+            <li ><a href="#">cakes</a></li>
+            <li ><a href="#">vanilla</a></li>
+            <li ><a href="#">birthday</a></li>
+            <li ><a href="#">wedding</a></li>
+            </ol>
+        </section>
+
+        <hr  color="#444" size=3 width="100%" align="center">
+
+        <section id="about">
+            <h1><a href="#">Acerca de esta página</a></h1>
+        </section>
+    </section>
+</body>
+</html>
